@@ -1,0 +1,94 @@
+ 
+// 头部的搜索框
+.mui-search{
+    line-height:34px;
+  text-align: center;
+
+    .mui-input-clear{
+      // padding:5px  2px; 
+      text-align: center; 
+    
+    }
+
+    .mui-placeholder{
+
+      padding:0px  10px;  
+    }
+  
+  }
+  // nav导航栏部分的设置
+  .nav{
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
+  a{
+    text-align: center;
+    img{
+      // width: 100%;
+      // width:50%;
+      width:80%;
+    }
+   
+  }    
+    
+  }
+  
+  
+  // main-content部分的设置
+  .main-content{
+  .goods-group{
+    .goods-title{
+      img{
+        width:100%;
+      }
+    }
+  
+    ul{
+      padding:10px  10px;
+     
+      li{ 
+  
+        float:left;
+        width:50%; 
+        padding:10px   0px;
+        background-color: skyblue;
+        border:1px  solid  gray;
+        margin-bottom:10px;
+        img{
+          width:100%;
+        }  
+        .goods-name{
+          height:40px;
+          overflow: hidden;
+        }
+        .goods-price{
+          color:red;    
+  
+        }
+  
+        .zxs{
+          color:blue;
+          display:inline-block;
+          height:60px;
+          width:100px;
+          text-align: center;
+          line-height: 60px;
+          font-size:14px;
+          border:3px solid  skyblue;
+          border-radius:5px;
+  
+        }
+      }
+    
+    }
+    li:nth-child(2n){
+      // background-color: red;
+      // border-left:2px  solid  gray;
+      // padding-left:2px;
+  
+    }
+   
+  }
+  }
+  
+   

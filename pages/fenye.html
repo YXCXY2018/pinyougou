@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <title>自己的分页</title>
+  <!-- ./ 相对于路径 -->
+  <!-- /绝对路径 -->
+  <!-- 以后我们的网站 都是通过 服务器来打开   -->
+  <!--     
+    网页 写了根路径 
+    1 服务器形式打开 正确!! 
+      a vs code  自带服务器
+      b 结合phpstudy 来使用!!! 
+    2 双击打开html页面 错误  => 跟路径就定位到了 c: d:
+    3 通过接口去返回一些数据
+      /1.jpg
+      ./1.jpg 
+    
+    -->
+  <link rel="stylesheet" href="/lib/mui/css/mui.css">
+  <link rel="stylesheet" href="/lib/fontawesome/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/common.css">
+  <!-- <link rel="stylesheet" href="/css/index.css">  -->
+  <link rel="stylesheet" href="/css/fenye.css">
+
+  <!-- 头部部分 -->
+  <div class="header-pyg">
+    <!-- 搜索框 mi上面复制的 -->
+    <div class="mui-input-row mui-search">
+      <input type="search" class="mui-input-clear" placeholder="">
+    </div>
+  </div>
+
+
+  <!-- 中间部分 -->
+  <div class="view-box">
+    <!-- 左边 -->
+    <div class="left    left-box">
+      <ul>
+        <!-- 模板占位专用 -->
+      </ul>
+
+    </div>
+    <!-- 右边 -->
+    <div class="right  right-box">
+      <div class="goods-group">
+        <div class="goods-title" >
+          <span>电视</span>
+          <span></span>
+        </div>
+        <ul>
+          <li>
+            <a href="">
+              <img src="http://api.pyg.ak48.xyz/full/2fb113b32f7a2b161f5ee4096c319afedc3fd5a1.jpg" alt="">
+              <div class="good-name">曲面电视</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="">
+
+              <img src="http://api.pyg.ak48.xyz/full/2fb113b32f7a2b161f5ee4096c319afedc3fd5a1.jpg" alt="">
+              <div class="good-name">曲面电视</div>
+            </a>
+            </a>
+          </li>
+          <li>
+            <a href="">
+
+              <img src="http://api.pyg.ak48.xyz/full/2fb113b32f7a2b161f5ee4096c319afedc3fd5a1.jpg" alt="">
+              <div class="good-name">曲面电视</div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+
+              <img src="http://api.pyg.ak48.xyz/full/2fb113b32f7a2b161f5ee4096c319afedc3fd5a1.jpg" alt="">
+              <div class="good-name">曲面电视</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="goods-group">
+        <div class="goods-title">电视</div>
+        <ul>
+          <li>
+            <a href="">
+
+              <img src="http://api.pyg.ak48.xyz/full/2fb113b32f7a2b161f5ee4096c319afedc3fd5a1.jpg" alt="">
+              <div class="good-name">曲面电视</div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+
+              <img src="http://api.pyg.ak48.xyz/full/2fb113b32f7a2b161f5ee4096c319afedc3fd5a1.jpg" alt="">
+              <div class="good-name">曲面电视</div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+
+              <img src="http://api.pyg.ak48.xyz/full/2fb113b32f7a2b161f5ee4096c319afedc3fd5a1.jpg" alt="">
+              <div class="good-name">曲面电视</div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+
+              <img src="http://api.pyg.ak48.xyz/full/2fb113b32f7a2b161f5ee4096c319afedc3fd5a1.jpg" alt="">
+              <div class="good-name">曲面电视</div>
+            </a>
+          </li>
+        </ul>
+
+
+      </div>
+
+    </div> 
+  </div>
+
+
+
+  <!-- 底部部分 -->
+  <div class="footer">
+    <a href="">
+      <span class="fa  fa-home    "></span>
+      <span> 首页</span>
+    </a>
+    <a href="">
+      <span class="fa   fa-list-ul "></span>
+      <span> 分类</span>
+    </a>
+    <a href="">
+      <span class=" fa   fa-shopping-cart"></span>
+      <span> 购物车</span>
+    </a>
+    <a href="">
+      <span class="fa  fa-user "></span>
+      <span> 我的</span>
+    </a>
+
+  </div>
+
+  <body>
+
+  </body>
+  <script src="/lib/mui/js/mui.js"></script>
+  <script src="/lib/arttemplate/template-web.js"></script>
+  <script src="/lib/zepto/zepto.js"></script>
+  <script src="/js/common.js"></script>
+  <script src="/lib/iscroll/iscroll.js"></script>
+  <script src="/js/fenye.js"></script>
+
+  <!-- 模板部分 -->
+  <!-- 左侧菜单 -->
+  <script id="leftTpl" type="text/html">
+    {{each arr value index}}
+    <!--判断 如果索引为0的话就让第一个li里面的元素是默认的选中状态 -->
+    {{if index==0}}
+    <!-- 给他一个active的类  用自定义的方式  css里面有设置的-->
+    <li data-index="{{index}}" class="active">{{value.cat_name}}</li>
+    {{/if}} {{if index!=0}}
+    <li data-index="{{index}}">{{value.cat_name}}</li>
+    {{/if}} {{/each}}
+  </script>
+
+
+
+  <!-- 右边部分的模板 -->
+  <!-- 右侧内容 -->
+  <!-- 右边是当左边的大项点击之后，这里就要显示相应的数据 -->
+  <!-- 结构为：.goods-group>.goods-title(要是选中的状态)>span(cat_name)
+                                                  +span(横线)
+                        ul>li>a>img
+                              +goods.name()                         -->
+
+
+
+  <!-- 两个嵌套，要注意区分一下前后两个  {{  each arr value index}} 
+            value he index的值不要一样被层叠掉                     -->
+  <script id="rightTpl" type="text/html">
+    <div>
+      {{each arr value index}}
+      <div class="goods-group">
+        <div class="goods-title">
+          <span>{{value.cat_name}}</span>
+          <span></span>
+        </div>
+        <ul>
+          <!-- 这里的value.childern -->
+          {{each value.children value2 index2 }}
+          <li>
+            <a href="/pages/good_list.html?cid={{value2.cat_id}}">
+              <img src="{{http://api.pyg.ak48.xyz/+cat_icon}}{{value2.cat_icon}}" alt="">
+              <div class="goods-name">{{value2.cat_name}}</div>
+            </a>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+      {{/each}}
+    </div>
+  </script>
+
+  <!-- 关于屏幕的适配 -->
+  <!-- rem 屏幕适配
+1 公式 动态的设置html的fontsize
+2 设计稿=> 基础值 要适配的屏幕的宽度  fontsize
+    基础值=>100px
+    要适配的屏幕的宽度 当前的屏幕的宽度
+    设计稿 没有  宽度  375px
+    fontsize
+3 可以加入一段js 来实现!!!! -->
+
+</html>

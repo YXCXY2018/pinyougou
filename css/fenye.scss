@@ -1,0 +1,73 @@
+body {
+  line-height: normal;
+}
+
+.view-box {
+  display: flex;
+  overflow: hidden;
+}
+
+
+// 左边
+.left-box {
+  width:1rem;
+  overflow:hidden;
+  background-color:green;
+    ul {
+      li {
+        text-align:center;
+        font-size:0.18rem;
+        padding:0.05rem 0;
+      }
+      .active{
+        background-color:red;
+        border-left:3px  solid  skyblue;  
+      }
+    }
+  }
+ 
+
+
+// 右边
+.right{
+  flex: 1;   
+  overflow: scroll;
+  background-color: skyblue;
+  .goods-group{
+    font-size: 0.14rem;
+    .goods-title{
+      color: #0094ff;
+      display: flex;
+      justify-content: space-between;
+      padding-right: 15px;
+      >span:nth-child(1){
+        padding: 0.05rem;
+         
+      }
+      >span:nth-child(2){
+        flex: 1;
+        height: 1px;
+        background-color: black;
+        // 控制子项在侧轴上的对齐方式 
+        align-self: center;
+      }
+    }
+    ul{
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      li{
+        width: 33.33%;
+        text-align: center;
+        a{
+          color: #000;
+          img{
+            width: 70%;
+            margin: 0 auto;
+          }
+          .goods-name{}
+        }
+      }
+    }
+  }
+}

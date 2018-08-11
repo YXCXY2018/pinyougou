@@ -1,0 +1,67 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+li{
+
+  list-style: none;
+}
+html,body{
+  height:100%；
+}
+body{
+  padding:50px  0px;
+  // overflow:scroll;   
+}
+// 初始化部分结束
+
+
+// 头部部分
+// 高度写死，固定定位，（margin-bottom来让整个head和轮播图模块之间产生一定的边距,
+// 这个是不起作用的，只能给轮播图模块加一个margin-top来拉开距离
+// 用（padding:  只能设置head里面input显示的位置
+// head里面搜索框的位置）
+.header-pyg{
+  height:50px;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  top:0px;
+  left:0px;
+  margin-bottom: 10px;
+  padding:5px  10px;
+}
+  
+
+// 中间部分的设置  设置一个滚动条
+.view{
+height:100%;
+overflow: scroll;
+background-color: pink;
+// 出现滚动条
+}
+
+
+// 底部部分的设置  顶部部分的设置
+.footer{
+  height:50px;
+  width: 100%;
+  background-color: green;
+  position: fixed;
+  bottom:0px;
+  left:0px;
+ 
+  display:flex;
+  background-color: white;
+  justify-content: space-between;
+//  水平方向上均分
+align-items: center;
+// 垂直方向上居中
+  a{
+    color:black;
+  } 
+}
+
+

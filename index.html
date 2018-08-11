@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <title>自己的主页</title>
+  <!-- ./ 相对于路径 -->
+  <!-- /绝对路径 -->
+  <!-- 以后我们的网站 都是通过 服务器来打开   -->
+  <!--     
+    网页 写了根路径 
+    1 服务器形式打开 正确!! 
+      a vs code  自带服务器
+      b 结合phpstudy 来使用!!! 
+    2 双击打开html页面 错误  => 跟路径就定位到了 c: d:
+    3 通过接口去返回一些数据
+      /1.jpg
+      ./1.jpg 
+    
+    -->
+  <link rel="stylesheet" href="/lib/mui/css/mui.css">
+  <link rel="stylesheet" href="/lib/fontawesome/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/common.css">
+  <link rel="stylesheet" href="/css/index.css"> 
+</head>
+<div class="header-pyg">
+  <!-- 搜索框 mi上面复制的 -->
+  <div class="mui-input-row mui-search">
+    <input type="search" class="mui-input-clear" placeholder="">
+</div>
+</div>
+
+<div class="view"> 
+  <!-- 轮播图 从mi上面复制的结构-->
+  <div class="mui-slider">
+      <div class="mui-slider-group mui-slider-loop">
+        <!--支持循环，需要重复图片节点-->
+        <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="http://p6lmyfkof.bkt.clouddn.com/banner3.png" /></a></div>
+        <div class="mui-slider-item"><a href="#"><img src="http://p6lmyfkof.bkt.clouddn.com/banner1.png" /></a></div>
+        <div class="mui-slider-item"><a href="#"><img src="http://p6lmyfkof.bkt.clouddn.com/banner2.png" /></a></div>
+        <div class="mui-slider-item"><a href="#"><img src="http://p6lmyfkof.bkt.clouddn.com/banner3.png" /></a></div>
+         
+        <!--支持循环，需要重复图片节点-->
+        <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="http://p6lmyfkof.bkt.clouddn.com/banner1.png" /></a></div>
+      </div>
+    </div>  
+
+
+    <!-- 导航栏部分的设置 -->
+    <!-- 照片下面的文字是和照片一起的,直接引入照片就可以了 -->
+    <div class="nav">
+      <!-- 模板占位专用 -->
+      <!-- <a href="">
+        <img src="http://p6lmyfkof.bkt.clouddn.com/icon_index_nav_4@2x.png" alt="">
+      </a>
+      <a href="">
+        <img src="http://p6lmyfkof.bkt.clouddn.com/icon_index_nav_4@2x.png" alt="">
+      </a>
+      <a href="">
+        <img src="http://p6lmyfkof.bkt.clouddn.com/icon_index_nav_4@2x.png" alt="">
+      </a>
+      <a href="">
+        <img src="http://p6lmyfkof.bkt.clouddn.com/icon_index_nav_4@2x.png" alt="">
+      </a> -->
+    </div>
+
+
+
+    <!-- 主要内容的设置 -->
+    <!-- goods-group >
+                goods-title>img(是一张img )
+                ul>li*4 
+                    li>img 
+                    godsname
+                    price
+                    找相似   -->
+
+                    <!-- 商品名称部分，文字太多，高度写死，overflower：hidden -->
+                    <!-- 让主要内容里面的内容部分一行水平显示两个：1用float：left； -->
+
+    <div class="main-content">
+
+      <!-- <div class="goods-group"> -->
+        <!-- <div class="goods-title">
+          <img src="http://image4.suning.cn/uimg/cms/img/149559219946350066.png  " alt="">
+        </div>  
+        <ul>
+          <li>    
+            <img src="http://image1.suning.cn/uimg/b2c/newcatentries/0070158136-000000000778833842_2_400x400.jpg" alt="">
+            <div class="goods-name">Adidas/阿迪达斯 NEO男上衣2017冬季新款运动休闲防风连帽夹克外套BS0834 CD2311</div>
+            <div class="goods-price">¥999</div>
+            <div   class="zxs">  找相似</div>
+          </li> -->
+
+          <!-- <li>    
+            <img src="http://image1.suning.cn/uimg/b2c/newcatentries/0070158136-000000000778833842_2_400x400.jpg" alt="">
+            <div class="goods-name">Adidas/阿迪达斯 NEO男上衣2017冬季新款运动休闲防风连帽夹克外套BS0834 CD2311</div>
+            <div class="goods-price">¥999</div>
+            <div   class="zxs">  找相似</div>
+          </li>
+          <li>    
+            <img src="http://image1.suning.cn/uimg/b2c/newcatentries/0070158136-000000000778833842_2_400x400.jpg" alt="">
+            <div class="goods-name">Adidas/阿迪达斯 NEO男上衣2017冬季新款运动休闲防风连帽夹克外套BS0834 CD2311</div>
+            <div class="goods-price">¥999</div>
+            <div   class="zxs">  找相似</div>
+          </li>
+          <li>    
+            <img src="http://image1.suning.cn/uimg/b2c/newcatentries/0070158136-000000000778833842_2_400x400.jpg" alt="">
+            <div class="goods-name">Adidas/阿迪达斯 NEO男上衣2017冬季新款运动休闲防风连帽夹克外套BS0834 CD2311</div>
+            <div class="goods-price">¥999</div>
+            <div   class="zxs">  找相似</div>
+          </li> -->
+       
+        <!-- </ul> -->
+      <!-- </div> -->
+    <!-- </div> -->
+
+
+
+</div>
+
+<div class="footer">
+  <a href="">
+    <span  class="fa  fa-home    "></span>
+    <span> 首页</span>
+  </a>
+  <a href="">
+    <span   class="fa   fa-list-ul "  ></span>
+    <span> 分类</span>
+  </a>
+  <a href="">
+    <span  class=" fa   fa-shopping-cart"></span>
+    <span> 购物车</span>
+  </a>
+  <a href="">
+    <span   class="fa  fa-user " ></span>
+    <span> 我的</span>
+  </a>
+
+</div>
+
+<body>
+
+</body>
+<script src="/lib/mui/js/mui.js"></script>
+<script src="/lib/arttemplate/template-web.js"></script>
+<script src="/lib/zepto/zepto.js"></script>
+<script src="/js/common.js"></script>
+<script src="/js/index.js"></script>
+
+
+
+
+<!-- 模板部分 -->
+
+<!-- 轮播图的模板 -->
+<!-- 轮播图的结构是 3 123 1   最后一张照片{{arr[arr.length-1].image_src}}   第一张照片 {{arr[0].image_src}}          -->
+<!--    -->
+   <!--  -->
+<script id="swiperTpl" type="text/html">
+  <!-- 轮播图 -->
+  <div class="mui-slider-group mui-slider-loop">
+    <!-- 最后一张图片  -->
+    <div class="mui-slider-item mui-slider-item-duplicate"> <a href="#"> <img src=" {{arr[arr.length-1].image_src}}" /> </a> </div>
+    {{each arr value index}}
+     <!--支持循环，需要重复图片节点-->
+     <div class="mui-slider-item"> <a href="#"> <img src="{{value.image_src}}" /> </a> </div>
+     <!--支持循环，需要重复图片节点-->
+     {{/each}}
+     <!-- 第一张图片 -->
+     <div class="mui-slider-item mui-slider-item-duplicate"> <a href="#"> <img src="{{arr[0].image_src}}" /> </a> </div>
+   </div>
+
+   <!-- 索引器    在hello-mui -->
+   <!-- <div class="mui-slider-indicator">
+     {{each arr value index}}
+     {{if index==0}}
+     <div class="mui-indicator mui-active"></div>
+     {{/if}}
+     {{if index!=0}}
+     <div class="mui-indicator"></div>
+     {{/if}}
+       {{/each}}
+     </div> -->
+</script>
+<!-- 轮播图的模板 -->
+
+
+
+<!-- nav模板 -->
+<script id="navTmp"   type="text/html"  >
+  {{each  arr value  index }}
+  <a href="">
+      <img src="{{value.image_src}}"  alt="">
+      <!-- 路径要用引号引起来 -->
+    </a>
+  {{/each}}
+</script>
+<!-- nav模板 -->
+
+
+
+<!-- goods-group模板 -->
+<!-- 要有两层嵌套的循环，goods-title  和同级的偶来里面的内容 -->
+<script   id="goodsTmp"  type="text/html"    >    
+{{each   arr  value   index}}
+<div class="goods-group">
+    <div class="goods-title">
+      <img src="{{value.group_img}} " alt="">
+    </div>  
+    <ul>
+      {{each  value.goods  value1  index1}}
+      <!-- arr换成了value1.goods !!!!!! 
+        value1要注意和前面的value区别一下
+      -->
+      <li>    
+        <img src="{{value1.goods_small_logo}}" alt="">
+        <div class="goods-name">{{value1.goods_name}}</div>
+        <div class="goods-price">¥{{value1.goods_price}}</div>
+        <div   class="zxs">  找相似</div>
+      </li>
+      {{/each }}
+    </ul>
+{{/each}}
+</script>
+<!-- goods-group模板 -->
+
+
+
+</html>

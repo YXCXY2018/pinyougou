@@ -1,0 +1,60 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+html, body {
+  height: 100%；;
+}
+
+body {
+  padding: 50px  0px;
+}
+
+.header-pyg {
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  margin-bottom: 10px;
+  padding: 5px  10px;
+}
+
+.view {
+  height: 100%;
+  overflow: scroll;
+  background-color: pink;
+}
+
+.footer {
+  height: 50px;
+  width: 100%;
+  background-color: green;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer a {
+  color: black;
+}
+/*# sourceMappingURL=common.css.map */
